@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!doctype html>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="grid grid-cols-3 grid-rows-5 text-center h-screen font-bold gap-4 border border-black border-2 outline-dotted">
+    <div class="col-span-full border border-black border-2">Header class</div>
+    <div class="row-start-2 row-end-3 border border-black border-2">Side class</div>
+    <div class="col-start-2 col-end-4 border border-black border-2">Content 1</div>
+    <div class="col-start-2 col-end-4 border border-black border-2">Content 2</div>
+    <div class="col-start-1 col-end-4 border border-black border-2">Exit</div>
+  </div>
+</body>
+</html>
